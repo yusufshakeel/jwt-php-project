@@ -94,10 +94,11 @@ function validateUserCredential()
 
         // on success generate jwt
         if (isset($result['status']) && $result['status'] === 'success') {
+            $userid = $result['userid'];
             $issuedAt = time();
             $expirationTime = $issuedAt + 60;  // jwt valid for 60 seconds from the issued time
             $payload = array(
-                'userid' => $result['userid'],
+                'userid' => $userid,
                 'iat' => $issuedAt,
                 'exp' => $expirationTime
             );
