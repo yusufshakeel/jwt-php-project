@@ -169,8 +169,8 @@ function getUserAccountData($userid = null)
             "userid" => "u2",
             "email" => "user@example.com",
             "password" => "$2y$12$3PfY4lNCR62/HH9aNGZFcebloX1gACQIbWeHfTwb8hKhMXfymiNLq",
-            "firstname" => "Yusuf",
-            "lastname" => "Shakeel"
+            "firstname" => "Example",
+            "lastname" => "User"
         )
 
     );
