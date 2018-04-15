@@ -125,7 +125,7 @@ function getUser()
             $decoded_array = (array)$decoded;
 
             $result = array(
-                'code' => 0,
+                'code' => 200,
                 'status' => 'success',
                 'data' => getUserAccountData($decoded_array['userid']),
                 'jwt_payload' => $decoded_array
